@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: beeb3db3f579885419aeea0c68e6c2be
+guid: 74481c21b65239d4f9693d915b86ff33
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7933309057664059750
-    second: JMZ_walk_down_0
-  - first:
-      213: 3173535428508139328
-    second: JMZ_walk_down_1
-  - first:
-      213: 2233607028701943802
-    second: JMZ_walk_down_2
+      213: 7048619890776175318
+    second: JZ_idle_right_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,67 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JMZ_walk_down_0
+      name: JZ_idle_right_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 30
+        width: 32
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a967b8cc17937e190800000000000000
-      internalID: -7933309057664059750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JMZ_walk_down_1
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 0
-        width: 30
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04f385a78a9aa0c20800000000000000
-      internalID: 3173535428508139328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JMZ_walk_down_2
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 0
-        width: 30
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af7589922cd5ffe10800000000000000
-      internalID: 2233607028701943802
+      spriteID: 6d2777a027ab1d160800000000000000
+      internalID: 7048619890776175318
       vertices: []
       indices: 
       edges: []
@@ -201,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 03675447672100c4289d6bf438200640
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JMZ_walk_down_0: -7933309057664059750
-      JMZ_walk_down_1: 3173535428508139328
-      JMZ_walk_down_2: 2233607028701943802
+      JZ_idle_right_0: 7048619890776175318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

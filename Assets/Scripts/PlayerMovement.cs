@@ -4,15 +4,15 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    public float walkSpeed = 5f;
-    public float runSpeed = 8f;
+    public float walkSpeed = 5f; // float for walkspeed that can be changed in editor
+    public float runSpeed = 8f; // float for runspeed that can be changed in editor
 
-    private float currentSpeed;
-    private Vector2 movement;
-    private Rigidbody2D rb2D;
+    private float currentSpeed; // used to change the speed if walking or running
+    private Vector2 movement; // vector2 to track directional movement
+    private Rigidbody2D rb2D; // forces rigidbody to be needed
     void Awake()
     {
-        rb2D = GetComponent<Rigidbody2D>();
+        rb2D = GetComponent<Rigidbody2D>(); // gets object rigidbody
         currentSpeed = walkSpeed;
     }
 
@@ -23,11 +23,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext ctx)
     {
-        movement = ctx.ReadValue<Vector2>();
+        movement = ctx.ReadValue<Vector2>(); // gets the direction of the input
     }
 
     public void Sprint(InputAction.CallbackContext ctx)
     {
+        // if shift is pressed, have running speed, if not, have walking speed
         if(ctx.ReadValue<float>() == 1) 
         {
             currentSpeed = runSpeed;
