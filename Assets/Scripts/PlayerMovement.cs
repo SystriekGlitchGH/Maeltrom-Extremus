@@ -1,15 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D))] // forces Rigidbody2D to be needed
 public class PlayerMovement : MonoBehaviour
 {
     public float walkSpeed = 5f; // float for walkspeed that can be changed in editor
     public float runSpeed = 8f; // float for runspeed that can be changed in editor
 
-    private float currentSpeed; // used to change the speed if walking or running
-    private Vector2 movement; // vector2 to track directional movement
-    private Rigidbody2D rb2D; // forces rigidbody to be needed
+    public float currentSpeed; // used to change the speed if walking or running
+    public Vector2 movement; // vector2 to track directional movement
+    public Rigidbody2D rb2D; // simplifies Rigidbody2D
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>(); // gets object rigidbody

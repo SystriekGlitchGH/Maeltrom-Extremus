@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 1921098861}
   - component: {fileID: 1921098866}
   - component: {fileID: 1921098865}
+  - component: {fileID: 1921098868}
   - component: {fileID: 1921098867}
   m_Layer: 0
   m_Name: Player
@@ -341,7 +342,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5207544987158716770, guid: b6f55b841bc4a164aa02a53bc746b8b7, type: 3}
+  m_Sprite: {fileID: -9154511075432601185, guid: 18e164c3830aab445ab1c766aff2fd4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -349,7 +350,7 @@ SpriteRenderer:
   m_Size: {x: 0.9375, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1921098864
@@ -381,6 +382,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   runSpeed: 8
+  currentSpeed: 0
+  movement: {x: 0, y: 0}
+  rb2D: {fileID: 0}
 --- !u!114 &1921098866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,6 +517,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1921098868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921098860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4246d0dcdb9d940bdbe8bf956ac23d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pm: {fileID: 1921098865}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
