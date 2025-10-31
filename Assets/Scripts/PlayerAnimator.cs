@@ -48,5 +48,10 @@ public class PlayerAnimator : MonoBehaviour
             anim.SetBool("running", true);
             anim.SetBool("walking", false);
         }
+        if (!pm.isMoving)
+        {
+            anim.SetBool("running", false);
+            anim.SetBool("walking", false);
+        }
     }
 }

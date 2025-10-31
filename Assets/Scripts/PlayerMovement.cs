@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 8f; // float for runspeed that can be changed in editor
 
     public float currentSpeed; // used to change the speed if walking or running
+    public bool isMoving; // used to check if player is moving, for animator
     public Vector2 movement; // vector2 to track directional movement
     public Rigidbody2D rb2D; // simplifies Rigidbody2D
     void Awake()
@@ -24,6 +25,13 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext ctx)
     {
         movement = ctx.ReadValue<Vector2>(); // gets the direction of the input
+        if (ctx.ReadValue<Vector2>() != Vector2.zero)
+        {
+            isMoving = true;
+        }
+        else{
+            isMoving = false;
+        }
     }
 
     public void Sprint(InputAction.CallbackContext ctx)
