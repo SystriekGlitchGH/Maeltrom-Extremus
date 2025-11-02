@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext ctx)
     {
         movement = ctx.ReadValue<Vector2>(); // gets the direction of the input
-        if (ctx.ReadValue<Vector2>() != Vector2.zero)
+        if (ctx.ReadValue<Vector2>() != Vector2.zero) // if the ctx is not at 0,0 you are moving
         {
             isMoving = true;
         }

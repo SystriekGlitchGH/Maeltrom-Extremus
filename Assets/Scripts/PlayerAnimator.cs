@@ -10,43 +10,19 @@ public class PlayerAnimator : MonoBehaviour
     }
     void Update()
     {
-        if (pm.movement.x == 1)
-        {
-            anim.SetBool("directionRight", true);
-            anim.SetBool("directionLeft", false);
-            anim.SetBool("directionUp", false);
-            anim.SetBool("directionDown", false);
-        }
-        if (pm.movement.x == -1)
-        {
-            anim.SetBool("directionRight", false);
-            anim.SetBool("directionLeft", true);
-            anim.SetBool("directionUp", false);
-            anim.SetBool("directionDown", false);
-        }
-        if (pm.movement.y == 1)
-        {
-            anim.SetBool("directionRight", false);
-            anim.SetBool("directionLeft", false);
-            anim.SetBool("directionUp", true);
-            anim.SetBool("directionDown", false);
-        }
-        if (pm.movement.y == -1)
-        {
-            anim.SetBool("directionRight", false);
-            anim.SetBool("directionLeft", false);
-            anim.SetBool("directionUp", false);
-            anim.SetBool("directionDown", true);
-        }
-        if (pm.currentSpeed == pm.walkSpeed)
+        if (pm.currentSpeed == pm.walkSpeed && pm.isMoving)
         {
             anim.SetBool("walking", true);
             anim.SetBool("running", false);
+            anim.SetFloat("moveX", pm.movement.x);
+            anim.SetFloat("moveY", pm.movement.y);
         }
-        if (pm.currentSpeed == pm.runSpeed)
+        if (pm.currentSpeed == pm.runSpeed && pm.isMoving)
         {
             anim.SetBool("running", true);
             anim.SetBool("walking", false);
+            anim.SetFloat("moveX", pm.movement.x);
+            anim.SetFloat("moveY", pm.movement.y);
         }
         if (!pm.isMoving)
         {
