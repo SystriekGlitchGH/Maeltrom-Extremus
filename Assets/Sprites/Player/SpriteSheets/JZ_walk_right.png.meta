@@ -132,7 +132,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JMZ_walk_right_0
+      name: JZ_walk_right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -145,16 +145,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 17164496c940f3a70800000000000000
-      internalID: 8808764465987477873
+      spriteID: 0944baaf305c0ba418e6e336ed683bc5
+      internalID: 895321440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JMZ_walk_right_1
+      name: JZ_walk_right_1
       rect:
         serializedVersion: 2
         x: 32
@@ -167,16 +167,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cc517552603303b60800000000000000
-      internalID: 7723729462429685196
+      spriteID: a5911a52f29bd7846acda7558812a652
+      internalID: 2041165755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JMZ_walk_right_2
+      name: JZ_walk_right_2
       rect:
         serializedVersion: 2
         x: 64
@@ -189,10 +189,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a0e7bd7a87094fe70800000000000000
-      internalID: 9148095590982974986
+      spriteID: 1a0b6b3c693031c4b90f94dd881c0311
+      internalID: 590711580
       vertices: []
       indices: 
       edges: []
@@ -211,9 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JMZ_walk_right_0: 8808764465987477873
-      JMZ_walk_right_1: 7723729462429685196
-      JMZ_walk_right_2: 9148095590982974986
+      JZ_walk_right_0: 895321440
+      JZ_walk_right_1: 2041165755
+      JZ_walk_right_2: 590711580
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
