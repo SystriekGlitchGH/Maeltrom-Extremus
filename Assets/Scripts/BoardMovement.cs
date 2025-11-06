@@ -1,16 +1,19 @@
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class BoardMovement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
+    {
+        
+    }
+    void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnMouseDown()
     {
-        
+        GetComponent<Tilemap>().WorldToCell(Input.mousePosition);
     }
 }
