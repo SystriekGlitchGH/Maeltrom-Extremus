@@ -3,6 +3,7 @@ using UnityEngine.Tilemaps;
 
 public class BoardMovement : MonoBehaviour
 {
+    public MagicStats mStats;
     void Awake()
     {
         
@@ -15,5 +16,6 @@ public class BoardMovement : MonoBehaviour
     public void OnMouseDown()
     {
         GetComponent<Tilemap>().WorldToCell(Input.mousePosition);
+        mStats.position = Input.mousePosition;
     }
 }

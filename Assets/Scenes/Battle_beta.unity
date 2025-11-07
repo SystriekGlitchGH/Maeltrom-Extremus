@@ -480,6 +480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1407026427}
   - component: {fileID: 1407026426}
+  - component: {fileID: 1407026428}
   m_Layer: 0
   m_Name: JZ_idle_right_0
   m_TagString: Untagged
@@ -557,6 +558,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1407026428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407026425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e8700cd0fd2c149b9055ee4b938b63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mTransform: {fileID: 1407026427}
+  position: {x: 0, y: 0, z: 0}
 --- !u!1 &1441049436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bd1f75f4e36e0e42b05329c1dc47703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mStats: {fileID: 0}
 --- !u!1 &1899785844
 GameObject:
   m_ObjectHideFlags: 0
